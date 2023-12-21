@@ -1,0 +1,11 @@
+.checkbox-component {
+    cursor: pointer;
+    margin-right: 4px;
+    display: grid;
+    place-items: center;
+
+    svg {
+        height: 20px;
+        fill: #ff88ff;
+    }
+}

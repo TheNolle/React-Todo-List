@@ -1,0 +1,43 @@
+.form-component {
+    display: flex;
+    border: 3px solid #333;
+    border-radius: 10px;
+    padding: 5px;
+
+    &:has(input:focus) {
+        border-color: #ff88ff;
+    }
+
+    &:has(input:not(:focus):hover) {
+        border-color: #c83bc8;
+    }
+
+    input {
+        color: #fff;
+        background-color: transparent;
+        padding: 0 8px;
+        display: block;
+        width: 100%;
+    }
+
+    button {
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        color: #fff;
+        background-color: #ff88ff;
+        border-radius: 6px;
+        width: 1.5rem;
+        height: 1.5rem;
+
+        &:not(:disabled):hover {
+            color: #ddd;
+            background-color: #dd88dd;
+        }
+
+        &:disabled {
+            color: #333;
+            background-color: #777;
+        }
+    }
+}

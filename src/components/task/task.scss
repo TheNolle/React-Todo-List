@@ -1,0 +1,37 @@
+.task-component {
+    display: flex;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 5px 9px;
+    margin-top: 5px;
+    transition: opacity 0.3s linear;
+
+    &.finished {
+        opacity: 0.3;
+
+        span:before {
+            width: 100%;
+        }
+    }
+
+    span {
+        position: relative;
+        word-break: break-all;
+        margin-right: 10px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 8px;
+            display: block;
+            width: 0;
+            height: 2px;
+            background-color: #aaa;
+            transition: width 0.2s linear;
+        }
+    }
+
+    .delete-component {
+        margin-left: auto;
+    }
+}
